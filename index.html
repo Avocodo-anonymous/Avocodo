@@ -340,6 +340,77 @@ $("#index").load("index.html");
             <td style="text-align: center;"><audio controls><source src="samples/singing/avocodo_v1/1.wav"></audio></td>
         </tr>
       </table>
+    </div>
+
+    <!-- Samples from baseline degraded by high frequency artifacts. -->
+    <div id="expressive" class="container">
+      <h3 style="color:black;" font-weight="bold">5. Analyze on artifacts: Expressive speech synthesis (Internal Korean Dataset)</h3>
+          <h7>We trained each vocoders with expressive speech datasets (20k iterations). All samples were excluded from training.</h7><br>
+          <h7>In expressive speech, the perceptual quality degradation by upsampling artifact at high-frequency is noticeble.</h7><br>
+      <img src="img/singing_spec.png" height="250" width="800">
+      <hr color="gray" size="1px" style="margin-bottom: 0; margin-top: 10"></hr>
+      <table>
+        <tr>
+          <td style="text-align: center;">Ground Truth</td>
+          <td style="text-align: center;">HiFi-GAN V1</td>
+          <td style="text-align: center;">Avocodo V1</td>
+        </tr>
+        <tr style="height:4px; padding:0; border:0">
+          <td colspan="3" style="height:4px; padding:0; border:0">
+            <h7>1. <span style="color:blue">골라봐.</span> 악몽이랑 흉몽 중에 <span style="color:blue">어떤 꿈이</span> 더 끌려?</h7><br>
+            <h7> => <span style="color:blue">gollabwa.</span> akmongirang hyungmong junge <span style="color:blue">eotteon kkumi</span> deo kkeullyeo?</h7>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/01_gt.wav"></audio></td>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/01_hifigan.wav"></audio></td>
+            <td style="text-align: center;"><audio controls><source src="samples/expressive/01_avocodo.wav"></audio></td>
+        </tr>
+        <tr style="height:4px; padding:0; border:0">
+          <td colspan="3" style="height:4px; padding:0; border:0">
+            <h7>2. <span style="color:blue">나는 안 되는 것이냐.</span></h7><br>
+            <h7> => <span style="color:blue">naneun an doeneun geosinya.</span></h7>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/02_gt.wav"></audio></td>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/02_hifigan.wav"></audio></td>
+            <td style="text-align: center;"><audio controls><source src="samples/expressive/02_avocodo.wav"></audio></td>
+        </tr>
+        <tr style="height:4px; padding:0; border:0">
+          <td colspan="3" style="height:4px; padding:0; border:0">
+            <h7>3. 그런 건 아주 오래전에 <span style="color:blue">사라졌으니.</span></h7><br>
+            <h7> => geureon geon aju oraejeone <span style="color:blue">sarajyeosseuni.</span></h7>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/03_gt.wav"></audio></td>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/03_hifigan.wav"></audio></td>
+            <td style="text-align: center;"><audio controls><source src="samples/expressive/03_avocodo.wav"></audio></td>
+        </tr>
+        <tr style="height:4px; padding:0; border:0">
+          <td colspan="3" style="height:4px; padding:0; border:0">
+            <h7>4. 우리 <span style="color:blue">세 자매가 있었지.</span></h7><br>
+            <h7> => uri se <span style="color:blue">jamaega isseossji.</span></h7>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/04_gt.wav"></audio></td>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/04_hifigan.wav"></audio></td>
+            <td style="text-align: center;"><audio controls><source src="samples/expressive/04_avocodo.wav"></audio></td>
+        </tr>
+        <tr style="height:4px; padding:0; border:0">
+          <td colspan="3" style="height:4px; padding:0; border:0">
+            <h7>5. <span style="color:blue">부끄러워하긴.</span> 조심해, 물어버리는 <span style="color:blue">수가 있어.</span></h7><br>
+            <h7> => <span style="color:blue">bukkeureowohagin.</span> josimhae, mureobeorineun <span style="color:blue">suga isseo.</span></h7>
+          </td>
+        </tr>
+        <tr>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/05_gt.wav"></audio></td>
+          <td style="text-align: center;"><audio controls><source src="samples/expressive/05_hifigan.wav"></audio></td>
+            <td style="text-align: center;"><audio controls><source src="samples/expressive/05_avocodo.wav"></audio></td>
+        </tr>
+      </table>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
